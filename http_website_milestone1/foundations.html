@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Foundations of HTTP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Technical Foundations of HTTP</h1>
+  <p>How clients and servers exchange HTTP messages.</p>
+</header>
+
+<nav>
+  <!-- Main menu is repeated on every page for consistent navigation. -->
+  <ul>
+    <li><a class="" href="index.html">Home</a></li>
+    <li><a class="active" href="foundations.html">Foundations</a></li>
+    <li><a class="" href="evolution.html">Evolution</a></li>
+    <li><a class="" href="security.html">Security & Performance</a></li>
+    <li><a class="" href="concepts.html">Key Concepts</a></li>
+    <li><a class="" href="references.html">References</a></li>
+    <li><a class="" href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section>
+  <h2>How HTTP Communication Works</h2>
+  <p>HTTP is an application-layer protocol that defines how messages are formatted and exchanged between clients and servers. A client, such as a web browser, sends a request for a resource. The server processes the request and returns a response containing the requested content or an explanation of what happened.</p>
+  <p>The basic HTTP exchange usually includes a method, a URI, headers, and sometimes a message body. The server returns a status code, response headers, and a body that may contain HTML, JSON, images, or other resources.</p>
+</section>
+<section>
+  <h2>Common Parts of an HTTP Message</h2>
+  <table>
+    <tr><th>Part</th><th>Description</th><th>Example</th></tr>
+    <tr><td>Method</td><td>Explains the action the client wants to perform.</td><td>GET, POST, PUT, DELETE</td></tr>
+    <tr><td>URI</td><td>Identifies the resource being requested.</td><td>/index.html or /api/users</td></tr>
+    <tr><td>Headers</td><td>Provide metadata about the request or response.</td><td>Content-Type, Authorization</td></tr>
+    <tr><td>Body</td><td>Optional data sent with the message.</td><td>Form data or JSON</td></tr>
+    <tr><td>Status Code</td><td>A number explaining the result of the request.</td><td>200 OK, 404 Not Found</td></tr>
+  </table>
+</section>
+<section>
+  <h2>Why Stateless Design Matters</h2>
+  <p>HTTP is stateless, meaning each request is handled independently. This helps servers scale because they do not need to remember every previous interaction. However, websites often need continuity for login sessions, shopping carts, and user preferences. Cookies, sessions, and authentication tokens are used to add that continuity.</p>
+  <div class="callout"><strong>Important:</strong> Statelessness makes HTTP simple and scalable, but modern web applications add state through related technologies.</div>
+</section>
+
+</main>
+
+<footer>
+  <p>This website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203: Introduction to Web Development</a>.</p>
+</footer>
+
+</body>
+</html>
