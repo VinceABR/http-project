@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Self-Assessment Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>HTTP Self-Assessment Quiz</h1>
+  <p>Test your understanding of HTTP foundations, versions, security, and performance.</p>
+</header>
+<nav aria-label="Main navigation">
+  <!-- Main menu is repeated on every page for consistent navigation. -->
+  <ul>
+    <li><a class="" href="index.html">Home</a></li>
+    <li><a class="" href="foundations.html">Foundations</a></li>
+    <li><a class="" href="evolution.html">Evolution</a></li>
+    <li><a class="" href="security.html">Security & Performance</a></li>
+    <li><a class="" href="concepts.html">Key Concepts</a></li>
+    <li><a class="active" href="quiz.html">Quiz</a></li>
+    <li><a class="" href="references.html">References</a></li>
+    <li><a class="" href="about.html">About</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="quiz-intro">
+    <h2>Instructions</h2>
+    <p>Answer all five questions, then select <strong>Submit Quiz</strong>. Each question is worth 20 points. A score of 70% or higher is a passing score.</p>
+  </section>
+
+  <form id="quiz-form" novalidate>
+    <!-- Question 1 uses a text input for the required fill-in-the-blank format. -->
+    <fieldset class="question-card" id="question-1">
+      <legend>Question 1: Fill in the blank <span class="points">20 points</span></legend>
+      <label for="q1">HTTP is a __________ protocol because each request is handled independently.</label>
+      <input type="text" id="q1" name="q1" autocomplete="off" placeholder="Enter one word">
+      <div class="question-feedback" id="feedback-1" aria-live="polite"></div>
+    </fieldset>
+
+    <!-- Questions 2-4 use radio buttons because only one answer is correct. -->
+    <fieldset class="question-card" id="question-2">
+      <legend>Question 2: Multiple choice <span class="points">20 points</span></legend>
+      <p>Which HTTP method is primarily used to retrieve a resource?</p>
+      <label class="choice"><input type="radio" name="q2" value="POST"> POST</label>
+      <label class="choice"><input type="radio" name="q2" value="GET"> GET</label>
+      <label class="choice"><input type="radio" name="q2" value="DELETE"> DELETE</label>
+      <label class="choice"><input type="radio" name="q2" value="PATCH"> PATCH</label>
+      <div class="question-feedback" id="feedback-2" aria-live="polite"></div>
+    </fieldset>
+
+    <fieldset class="question-card" id="question-3">
+      <legend>Question 3: Multiple choice <span class="points">20 points</span></legend>
+      <p>Which status code means that the requested resource was not found?</p>
+      <label class="choice"><input type="radio" name="q3" value="200"> 200</label>
+      <label class="choice"><input type="radio" name="q3" value="301"> 301</label>
+      <label class="choice"><input type="radio" name="q3" value="404"> 404</label>
+      <label class="choice"><input type="radio" name="q3" value="500"> 500</label>
+      <div class="question-feedback" id="feedback-3" aria-live="polite"></div>
+    </fieldset>
+
+    <fieldset class="question-card" id="question-4">
+      <legend>Question 4: Multiple choice <span class="points">20 points</span></legend>
+      <p>Which version of HTTP uses QUIC over UDP?</p>
+      <label class="choice"><input type="radio" name="q4" value="HTTP/1.0"> HTTP/1.0</label>
+      <label class="choice"><input type="radio" name="q4" value="HTTP/1.1"> HTTP/1.1</label>
+      <label class="choice"><input type="radio" name="q4" value="HTTP/2"> HTTP/2</label>
+      <label class="choice"><input type="radio" name="q4" value="HTTP/3"> HTTP/3</label>
+      <div class="question-feedback" id="feedback-4" aria-live="polite"></div>
+    </fieldset>
+
+    <!-- Question 5 uses checkboxes because more than one answer is correct. -->
+    <fieldset class="question-card" id="question-5">
+      <legend>Question 5: Select all that apply <span class="points">20 points</span></legend>
+      <p>Which features or technologies improve HTTP security or performance?</p>
+      <label class="choice"><input type="checkbox" name="q5" value="TLS"> TLS encryption</label>
+      <label class="choice"><input type="checkbox" name="q5" value="CDN"> Content Delivery Networks</label>
+      <label class="choice"><input type="checkbox" name="q5" value="Compression"> Gzip or Brotli compression</label>
+      <label class="choice"><input type="checkbox" name="q5" value="Plaintext"> Sending passwords in plain text</label>
+      <div class="question-feedback" id="feedback-5" aria-live="polite"></div>
+    </fieldset>
+
+    <div class="quiz-actions">
+      <button type="submit" class="primary-button">Submit Quiz</button>
+      <button type="button" id="reset-button" class="secondary-button">Retake / Reset Quiz</button>
+    </div>
+  </form>
+
+  <section id="quiz-results" class="results-panel hidden" aria-live="polite" tabindex="-1">
+    <h2>Your Quiz Results</h2>
+    <p id="pass-fail" class="result-heading"></p>
+    <p id="total-score" class="score-display"></p>
+    <p id="result-message"></p>
+  </section>
+</main>
+<footer>
+  <p>This website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203: Introduction to Web Development</a>.</p>
+</footer>
+</body>
+</html>
