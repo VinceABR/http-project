@@ -1,58 +1,53 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>History and Evolution of HTTP</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>History and Evolution of HTTP</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="True" src="quiz.js"></script></head>
 <body>
 <header>
-  <h1>History and Evolution of HTTP</h1>
-  <p>A timeline of how HTTP developed from HTTP/0.9 to HTTP/3.</p>
+<h1>History and Evolution of HTTP</h1>
+<p>A timeline of how HTTP developed from HTTP/0.9 to HTTP/3.</p>
 </header>
-
-<nav aria-label="Main navigation">
-  <!-- Main menu is repeated on every page for consistent navigation. -->
-  <ul>
-    <li><a class="" href="index.html">Home</a></li>
-    <li><a class="" href="foundations.html">Foundations</a></li>
-    <li><a class="active" href="evolution.html">Evolution</a></li>
-    <li><a class="" href="security.html">Security & Performance</a></li>
-    <li><a class="" href="concepts.html">Key Concepts</a></li>
-    <li><a class="" href="quiz.html">Quiz</a></li>
-    <li><a class="" href="references.html">References</a></li>
-    <li><a class="" href="about.html">About</a></li>
-  </ul>
+<nav aria-label="Main navigation"><button aria-controls="main-menu" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
+<!-- Main menu is repeated on every page for consistent navigation. -->
+<ul id="main-menu">
+<li><a class="" href="index.html">Home</a></li>
+<li><a class="" href="foundations.html">Foundations</a></li>
+<li><a class="active" href="evolution.html">Evolution</a></li>
+<li><a class="" href="security.html">Security &amp; Performance</a></li>
+<li><a class="" href="concepts.html">Key Concepts</a></li>
+<li><a class="" href="quiz.html">Quiz</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="about.html">About</a></li>
+</ul>
 </nav>
-
 <main>
-
 <section>
-  <h2>From Simple Documents to Modern Applications</h2>
-  <p>HTTP began as a way to retrieve simple hypertext documents on the early World Wide Web. Over time, it developed into a protocol capable of supporting complex web applications, APIs, streaming platforms, cloud computing, mobile apps, and distributed services.</p>
+<h2>From Simple Documents to Modern Applications</h2>
+<p>HTTP began as a way to retrieve simple hypertext documents on the early World Wide Web. Over time, it developed into a protocol capable of supporting complex web applications, APIs, streaming platforms, cloud computing, mobile apps, and distributed services.</p>
 </section>
 <section>
-  <h2>Timeline of HTTP Versions</h2>
-  <table>
-    <tr><th>Version</th><th>Main Idea</th><th>Impact</th></tr>
-    <tr><td>HTTP/0.9</td><td>Simple GET requests for HTML documents.</td><td>Supported the earliest web pages.</td></tr>
-    <tr><td>HTTP/1.0</td><td>Added headers, status codes, and more content types.</td><td>Made the web more flexible.</td></tr>
-    <tr><td>HTTP/1.1</td><td>Added persistent connections, caching improvements, host headers, and chunked transfer encoding.</td><td>Became a long-lasting foundation for web growth.</td></tr>
-    <tr><td>HTTP/2</td><td>Added multiplexing, binary framing, and header compression.</td><td>Reduced latency and improved performance.</td></tr>
-    <tr><td>HTTP/3</td><td>Uses QUIC over UDP instead of traditional TCP.</td><td>Improves speed and reliability, especially on mobile or unstable networks.</td></tr>
-  </table>
+<h2>Timeline of HTTP Versions</h2>
+<div aria-label="Scrollable data table" class="table-scroll" role="region" tabindex="0"><table>
+<tr><th>Version</th><th>Main Idea</th><th>Impact</th></tr>
+<tr><td>HTTP/0.9</td><td>Simple GET requests for HTML documents.</td><td>Supported the earliest web pages.</td></tr>
+<tr><td>HTTP/1.0</td><td>Added headers, status codes, and more content types.</td><td>Made the web more flexible.</td></tr>
+<tr><td>HTTP/1.1</td><td>Added persistent connections, caching improvements, host headers, and chunked transfer encoding.</td><td>Became a long-lasting foundation for web growth.</td></tr>
+<tr><td>HTTP/2</td><td>Added multiplexing, binary framing, and header compression.</td><td>Reduced latency and improved performance.</td></tr>
+<tr><td>HTTP/3</td><td>Uses QUIC over UDP instead of traditional TCP.</td><td>Improves speed and reliability, especially on mobile or unstable networks.</td></tr>
+</table></div>
 </section>
 <section>
-  <h2>Why Evolution Was Needed</h2>
-  <p>As websites became larger and more interactive, performance problems became more noticeable. Older approaches required too many separate connections and created delays. Newer versions of HTTP were designed to reduce latency, reuse connections, compress data, and handle multiple requests more efficiently.</p>
+<h2>Why Evolution Was Needed</h2>
+<p>As websites became larger and more interactive, performance problems became more noticeable. Older approaches required too many separate connections and created delays. Newer versions of HTTP were designed to reduce latency, reuse connections, compress data, and handle multiple requests more efficiently.</p>
 </section>
-
 </main>
-
 <footer>
-  <p>This website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203: Introduction to Web Development</a>.</p>
+<p>This responsive website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203: Introduction to Web Development</a>.</p>
 </footer>
-
 </body>
 </html>

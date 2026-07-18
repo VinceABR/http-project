@@ -1,71 +1,66 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evolution of HTTP: The Backbone of the Web</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evolution of HTTP: The Backbone of the Web</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="True" src="quiz.js"></script></head>
 <body>
 <header>
-  <h1>Evolution of HTTP: The Backbone of the Web</h1>
-  <p>An interactive research website for IT 3203 Project Milestone #2.</p>
+<h1>Evolution of HTTP: The Backbone of the Web</h1>
+<p>An interactive research website for IT 3203 Project Milestone #2.</p>
 </header>
-
-<nav aria-label="Main navigation">
-  <!-- Main menu is repeated on every page for consistent navigation. -->
-  <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a class="" href="foundations.html">Foundations</a></li>
-    <li><a class="" href="evolution.html">Evolution</a></li>
-    <li><a class="" href="security.html">Security & Performance</a></li>
-    <li><a class="" href="concepts.html">Key Concepts</a></li>
-    <li><a class="" href="quiz.html">Quiz</a></li>
-    <li><a class="" href="references.html">References</a></li>
-    <li><a class="" href="about.html">About</a></li>
-  </ul>
+<nav aria-label="Main navigation"><button aria-controls="main-menu" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
+<!-- Main menu is repeated on every page for consistent navigation. -->
+<ul id="main-menu">
+<li><a class="active" href="index.html">Home</a></li>
+<li><a class="" href="foundations.html">Foundations</a></li>
+<li><a class="" href="evolution.html">Evolution</a></li>
+<li><a class="" href="security.html">Security &amp; Performance</a></li>
+<li><a class="" href="concepts.html">Key Concepts</a></li>
+<li><a class="" href="quiz.html">Quiz</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="about.html">About</a></li>
+</ul>
 </nav>
-
 <main>
-
-<section>
-  <!-- Homepage cover content and abstract. -->
-  <h2>Abstract</h2>
-  <p>HTTP, or Hypertext Transfer Protocol, is one of the most important technologies behind the World Wide Web. It allows browsers, websites, applications, APIs, cloud services, and mobile systems to communicate through a request-and-response model. This project explains what HTTP is, how it works, how it has evolved, and why it continues to matter for modern web development.</p>
-  <p>Originally created to transfer simple hypertext documents, HTTP has grown into a flexible protocol used for websites, streaming, cloud computing, authentication, APIs, and distributed systems. Today, HTTP works together with HTTPS, TLS encryption, caching, compression, content delivery networks, and newer versions such as HTTP/2 and HTTP/3.</p>
+<section class="milestone-note"><h2>Milestone 3: Responsive and Mobile-Friendly Design</h2><p>The completed site now adapts to desktop, tablet, and phone screens. Navigation collapses into a touch-friendly menu, images scale within their containers, wide tables can scroll without breaking the page, and quiz controls expand for comfortable mobile use.</p><ul><li>Responsive layouts at desktop, tablet, and mobile widths</li><li>Accessible menu button with keyboard and screen-reader support</li><li>Flexible images, cards, tables, and quiz controls</li><li>Completed HTTP research organized across multiple topic pages</li></ul></section><section>
+<!-- Homepage cover content and abstract. -->
+<h2>Abstract</h2>
+<p>HTTP, or Hypertext Transfer Protocol, is one of the most important technologies behind the World Wide Web. It allows browsers, websites, applications, APIs, cloud services, and mobile systems to communicate through a request-and-response model. This project explains what HTTP is, how it works, how it has evolved, and why it continues to matter for modern web development.</p>
+<p>Originally created to transfer simple hypertext documents, HTTP has grown into a flexible protocol used for websites, streaming, cloud computing, authentication, APIs, and distributed systems. Today, HTTP works together with HTTPS, TLS encryption, caching, compression, content delivery networks, and newer versions such as HTTP/2 and HTTP/3.</p>
 </section>
 <section class="milestone-note"><h2>New in Milestone #2</h2><p>This version adds an interactive JavaScript quiz that checks answers, calculates a score, gives question-by-question feedback, and allows the user to reset and try again.</p><a class="button-link" href="quiz.html">Take the HTTP Quiz</a></section>
 <section id="toc">
-  <h2>Table of Contents</h2>
-  <ol>
-    <li><a href="foundations.html">Technical Foundations of HTTP</a></li>
-    <li><a href="evolution.html">History and Evolution of HTTP</a></li>
-    <li><a href="security.html">Security, Performance, and Real-World Use</a></li>
-    <li><a href="concepts.html">Key HTTP Concepts</a></li>
-    <li><a href="quiz.html">HTTP Self-Assessment Quiz</a></li>
-    <li><a href="references.html">References and Learning Resources</a></li>
-    <li><a href="about.html">About This Project</a></li>
-  </ol>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="foundations.html">Technical Foundations of HTTP</a></li>
+<li><a href="evolution.html">History and Evolution of HTTP</a></li>
+<li><a href="security.html">Security, Performance, and Real-World Use</a></li>
+<li><a href="concepts.html">Key HTTP Concepts</a></li>
+<li><a href="quiz.html">HTTP Self-Assessment Quiz</a></li>
+<li><a href="references.html">References and Learning Resources</a></li>
+<li><a href="about.html">About This Project</a></li>
+</ol>
 </section>
 <section>
-  <h2>Key Terms</h2>
-  <div class="grid">
-    <div class="feature-box"><strong>Client:</strong> A browser or application that sends a request.</div>
-    <div class="feature-box"><strong>Server:</strong> A system that provides resources such as HTML, JSON, or images.</div>
-    <div class="feature-box"><strong>Request:</strong> A message sent by a client asking for a resource.</div>
-    <div class="feature-box"><strong>Response:</strong> A server message containing a status code, headers, and content.</div>
-  </div>
+<h2>Key Terms</h2>
+<div class="grid">
+<div class="feature-box"><strong>Client:</strong> A browser or application that sends a request.</div>
+<div class="feature-box"><strong>Server:</strong> A system that provides resources such as HTML, JSON, or images.</div>
+<div class="feature-box"><strong>Request:</strong> A message sent by a client asking for a resource.</div>
+<div class="feature-box"><strong>Response:</strong> A server message containing a status code, headers, and content.</div>
+</div>
 </section>
 <section>
-  <h2>HTTP Request and Response</h2>
-  <img class="responsive" src="images/http-diagram.svg" alt="Diagram showing an HTTP request from a client to a server and a response back to the client">
+<h2>HTTP Request and Response</h2>
+<img alt="Diagram showing an HTTP request from a client to a server and a response back to the client" class="responsive" src="images/http-diagram.svg"/>
 </section>
-
 </main>
-
 <footer>
-  <p>This website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203: Introduction to Web Development</a>.</p>
+<p>This responsive website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203: Introduction to Web Development</a>.</p>
 </footer>
-
 </body>
 </html>
